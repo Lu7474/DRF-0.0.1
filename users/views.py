@@ -1,10 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import AllowAny
-from django.contrib.auth import get_user_model
+from .models import User
 from .serializers import UserSerializer
-
-
-User = get_user_model()
 
 
 class UserViewSet(ModelViewSet):

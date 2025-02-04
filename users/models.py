@@ -3,4 +3,7 @@ from django.db import models
 
 
 class User(AbstractUser):
-    pass
+    is_owner = models.BooleanField(default=False, verbose_name="Владелец жилья")
+
+    def __str__(self):
+        return self.username

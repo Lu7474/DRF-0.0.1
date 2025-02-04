@@ -141,3 +141,4 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "0.0.1",
     "SERVE_INCLUDE_SCHEMA": False,
 }
+AUTH_USER_MODEL = "users.User"
