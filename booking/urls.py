@@ -5,8 +5,8 @@ from .views import PropertyViewSet, BookingViewSet, ReviewViewSet
 
 router_v1 = DefaultRouter()
 router_v1.register("properties", PropertyViewSet)
-("bookings", BookingViewSet)
-("reviews", ReviewViewSet)
+router_v1.register("bookings", BookingViewSet)
+router_v1.register("reviews", ReviewViewSet)
 urlpatterns = [
     path("v1/", include(router_v1.urls)),
 ]
