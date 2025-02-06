@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "booking",
     "users",
     "drf_spectacular",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
